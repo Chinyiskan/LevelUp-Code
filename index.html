@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+
+
+
+
+
+<head>
+
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LevelUp Code — Bootcamp Bit Wars</title>
+  <meta name="description"
+    content="LevelUp Code es un bootcamp presencial donde jóvenes aprenden a programar desde cero hasta aplicaciones fullstack desplegadas en internet. JavaScript, Node.js, React y más." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#07080f" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="static/images/logo.webp" />
+  <link rel="apple-touch-icon" href="static/images/logo.webp" />
+
+  <!-- Open Graph / Redes sociales -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="LevelUp Code — Bootcamp Bit Wars" />
+  <meta property="og:description"
+    content="Un bootcamp donde los jóvenes aprenden a construir software real — desde cero hasta aplicaciones fullstack desplegadas en internet." />
+  <meta property="og:image" content="static/images/dashboeard.webp" />
+  <!-- TODO: Cambiar a URL absoluta cuando tengas dominio, ej: https://tudominio.com/static/images/dashboeard.webp -->
+
+  <!-- Preconnect a orígenes externos críticos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="dns-prefetch" href="https://cdn.simpleicons.org" />
+
+  <!-- Fuente crítica: preload para evitar FOUT en títulos -->
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="static/css/style.css" />
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+  <div class="stars-layer"></div>
+
+
+
+
+
+  <!-- ─── NAV ──────────────────────────────────────────── -->
+
+
+  <nav>
+
+
+    <div class="nav-logo">
+
+
+      <div class="logo-img">
+
+
+        <img src="static/images/logo.webp" alt="LevelUp Code" width="40" height="40" decoding="async" />
+
+
+      </div>
+
+
+      <span>LevelUp Code</span>
+
+
+      <span class="nav-badge">BIT WARS</span>
+
+
+    </div>
+
+
+    <a href="https://wa.me/573132160397?text=Hola%2C%20quiero%20saber%20más%20sobre%20el%20bootcamp" class="nav-cta"
+      target="_blank">
+
+
+      ▶ INICIAR MISIÓN
+
+
+    </a>
+
+
+  </nav>
+
+
+
+
+
+  <!-- ─── HERO ──────────────────────────────────────────── -->
+
+
+  <section id="hero">
+
+
+    <canvas id="hero-canvas"></canvas>
+
+
+    <div class="hero-glow"></div>
+
+
+    <div class="hero-glow2"></div>
+
+
+
+
+
+    <div class="hero-content">
+
+
+      <div class="hero-eyebrow">
+
+
+        <span class="dot"></span>
+
+
+        Inscripciones abiertas
+
+
+      </div>
+
+
+
+
+
+      <h1 class="hero-title">
+
+
+        El código es el<br>
+
+
+        <span class="line-gold">nuevo idioma</span><br>
+
+
+        <span class="line-cyan">del universo.</span>
+
+
+      </h1>
+
+
+
+
+
+      <p class="hero-subtitle">
+
+
+        Un bootcamp donde los jóvenes aprenden a construir software real — desde cero hasta aplicaciones fullstack
+
+
+        desplegadas en internet.
+
+
+      </p>
+
+
+
+
+
+      <div class="hero-ctas">
+
+
+        <a href="https://wa.me/573132160397?text=Hola%2C%20quiero%20saber%20más%20sobre%20el%20bootcamp"
+          class="btn-primary" target="_blank">
+
+
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+
+
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+
+
+          </svg>
+
+
+          Quiero info por WhatsApp
+
+
+        </a>
+
+
+        <a href="#viaje" class="btn-secondary">
+
+
+          Ver el programa ↓
+
+
+        </a>
+
+
+      </div>
+
+
+
+
+
+      <div class="hero-hexa">
+
+
+        <div class="hero-hexa-img">
+
+
+          <video src="static/videos/video_hexa.mp4" autoplay loop muted playsinline
+            aria-label="Maestro Hexa animado"></video>
+
+
+        </div>
+
+
+        <p class="hero-hexa-label">// MAESTRO HEXA — TU GUÍA EN BIT WARS</p>
+
+
+      </div>
+
+
+
+
+
+      <div class="hero-stats">
+
+
+        <div class="hero-stat">
+
+
+          <div class="num">12</div>
+
+
+          <div class="label">meses de formación</div>
+
+
+        </div>
+
+
+        <div class="hero-stat">
+
+
+          <div class="num">3</div>
+
+
+          <div class="label">fases de aprendizaje</div>
+
+
+        </div>
+
+
+        <div class="hero-stat">
+
+
+          <div class="num">+48</div>
+
+
+          <div class="label">proyectos reales</div>
+
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
+
+
+
+  <!-- ─── QUÉ ES ─────────────────────────────────────────── -->
+
+
+  <section id="que-es">
+
+
+    <div class="what-grid">
+
+
+      <div class="reveal">
+
+
+        <p class="section-label">// SOBRE LA ACADEMIA</p>
+
+
+        <h2 class="section-title">No es un curso.<br>Es una <em>transformación.</em></h2>
+
+
+        <p class="section-body">
+
+
+          LevelUp Code es un bootcamp estructurado para jóvenes que quieren aprender a programar en serio — usando las
+
+
+          mismas tecnologías que usan las startups reales de hoy.
+
+
+        </p>
+
+
+        <div class="what-pillars">
+
+
+          <div class="pillar">
+
+
+            <div class="pillar-icon">
+
+
+              <img src="static/images/logros.webp" alt="Aprende haciendo" width="40" height="40" decoding="async"
+                loading="lazy" />
+
+
+            </div>
+
+
+            <div>
+
+
+              <h3>Aprende haciendo</h3>
+
+
+              <p>Cada módulo termina con un proyecto real que puedes mostrar en tu portafolio. Cero teoría sin práctica.
+
+
+              </p>
+
+
+            </div>
+
+
+          </div>
+
+
+          <div class="pillar">
+
+
+            <div class="pillar-icon">
+
+
+              <img src="static/images/frontend.webp" alt="Proyectos de nivel profesional" width="40" height="40"
+                decoding="async" loading="lazy" />
+
+
+            </div>
+
+
+            <div>
+
+
+              <h3>Proyectos de nivel profesional</h3>
+
+
+              <p>Construyes apps completas con frontend, backend y base de datos. Las mismas piezas que mueven startups.
+
+
+              </p>
+
+
+            </div>
+
+
+          </div>
+
+
+          <div class="pillar">
+
+
+            <div class="pillar-icon">
+
+
+              <img src="static/images/comunidad.webp" alt="Comunidad con identidad" width="40" height="40"
+                decoding="async" loading="lazy" />
+
+
+            </div>
+
+
+            <div>
+
+
+              <h3>Una comunidad con identidad</h3>
+
+
+              <p>El universo Bit Wars no es solo estética — es una cultura de progresión, misiones y logros reales.</p>
+
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+
+      <div class="what-visual reveal">
+
+
+        <div class="what-card">
+
+
+          <div class="card-top-bar">
+
+
+            <div class="dot-red"></div>
+
+
+            <div class="dot-yel"></div>
+
+
+            <div class="dot-grn"></div>
+
+
+          </div>
+
+
+          <span class="comment">// Tu primer proyecto en 4 semanas</span><br><br>
+
+
+          <span class="kw">function</span> <span class="fn">calcularImpuesto</span>(precio) {<br>
+
+
+          &nbsp;&nbsp;<span class="kw">const</span> iva = precio * 0.19;<br>
+
+
+          &nbsp;&nbsp;<span class="kw">return</span> precio + iva;<br>
+
+
+          }<br><br>
+
+
+          <span class="comment">// Semana 8: conectas tu primer servidor</span><br><br>
+
+
+          app.get(<span class="str">'/api/productos'</span>, (req, res) =&gt; {<br>
+
+
+          &nbsp;&nbsp;res.json(catalogo);<br>
+
+
+          });<br><br>
+
+
+          <span class="comment">// Mes 12: lanzas en producción</span><br>
+
+
+          <span class="kw">export default</span> <span class="fn">App</span>();
+
+
+          <span class="cursor-blink"></span>
+
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
+
+
+
+  <!-- ─── EL VIAJE ───────────────────────────────────────── -->
+
+
+  <section id="viaje">
+
+
+    <div class="journey-header reveal">
+
+
+      <p class="section-label">// EL CAMINO DEL DEVELOPER</p>
+
+
+      <h2 class="section-title">Tres fases.<br>Un <em>desarrollador completo.</em></h2>
+
+
+    </div>
+
+
+
+
+
+    <div class="phases-track">
+
+
+
+
+
+      <div class="phase-card phase-card--js reveal">
+
+
+        <div class="phase-num">
+
+
+          <span class="p-label">FASE</span>
+
+
+          <span class="p-num">01</span>
+
+
+          <span class="p-meses">5 meses</span>
+
+
+        </div>
+
+
+        <div class="phase-body">
+
+
+          <span class="phase-tech-badge">JAVASCRIPT + BOOTSTRAP</span>
+
+
+          <h3>El Despertar del Código</h3>
+
+
+          <p>De cero absoluto a construir interfaces web interactivas. Aprenderás la lógica de la programación, a
+
+
+            manipular el DOM, crear funciones, manejar datos y diseñar layouts responsivos.</p>
+
+
+          <div class="phase-skills">
+
+
+            <span class="skill-chip">JavaScript</span>
+
+
+            <span class="skill-chip">DOM</span>
+
+
+            <span class="skill-chip">Funciones</span>
+
+
+            <span class="skill-chip">Arrays & Objetos</span>
+
+
+            <span class="skill-chip">Bootstrap</span>
+
+
+            <span class="skill-chip">Fetch API</span>
+
+
+          </div>
+
+
+          <div class="phase-project">
+
+
+            <strong>PROYECTO FINAL —</strong> App web interactiva que consume una API real, con datos dinámicos y diseño
+
+
+            responsive.
+
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+
+      <div class="phase-card phase-card--node reveal">
+
+
+        <div class="phase-num">
+
+
+          <span class="p-label">FASE</span>
+
+
+          <span class="p-num">02</span>
+
+
+          <span class="p-meses">3 meses</span>
+
+
+        </div>
+
+
+        <div class="phase-body">
+
+
+          <span class="phase-tech-badge">NODE.JS + SUPABASE</span>
+
+
+          <h3>El Servidor Despierta</h3>
+
+
+          <p>Entrás al backend: construyes APIs reales, conectas bases de datos, implementas autenticación segura y
+
+
+            despliegas tus proyectos en internet por primera vez.</p>
+
+
+          <div class="phase-skills">
+
+
+            <span class="skill-chip">Node.js</span>
+
+
+            <span class="skill-chip">Express</span>
+
+
+            <span class="skill-chip">SQL</span>
+
+
+            <span class="skill-chip">Supabase</span>
+
+
+            <span class="skill-chip">JWT Auth</span>
+
+
+            <span class="skill-chip">Vercel</span>
+
+
+          </div>
+
+
+          <div class="phase-project">
+
+
+            <strong>PROYECTO FINAL —</strong> Backend profesional con auth, CRUD persistente y seguridad, desplegado en
+
+
+            producción.
+
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+
+      <div class="phase-card phase-card--react reveal">
+
+
+        <div class="phase-num">
+
+
+          <span class="p-label">FASE</span>
+
+
+          <span class="p-num">03</span>
+
+
+          <span class="p-meses">4 meses</span>
+
+
+        </div>
+
+
+        <div class="phase-body">
+
+
+          <span class="phase-tech-badge">REACT + TAILWIND + SUPABASE</span>
+
+
+          <h3>El Producto Final</h3>
+
+
+          <p>El stack de las startups reales. Construyes aplicaciones React completas con UI profesional, datos en
+
+
+            tiempo real, usuarios autenticados y todo listo para mostrar en cualquier entrevista.</p>
+
+
+          <div class="phase-skills">
+
+
+            <span class="skill-chip">React</span>
+
+
+            <span class="skill-chip">Tailwind CSS</span>
+
+
+            <span class="skill-chip">Shadcn/ui</span>
+
+
+            <span class="skill-chip">TanStack Query</span>
+
+
+            <span class="skill-chip">Custom Hooks</span>
+
+
+            <span class="skill-chip">Supabase Auth</span>
+
+
+          </div>
+
+
+          <div class="phase-project">
+
+
+            <strong>PROYECTO FINAL —</strong> Aplicación fullstack completa. Auth, CRUD, UI profesional. Lista para
+
+
+            portafolio real.
+
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+
+    </div>
+
+
+  </section>
+
+
+
+
+
+  <!-- ─── LO QUE CONSTRUIRÁS ────────────────────────────── -->
+
+
+  <section id="proyectos">
+
+
+    <div class="builds-header reveal">
+
+
+      <p class="section-label">// PROYECTOS REALES</p>
+
+
+      <h2 class="section-title">No ejercicios.<br><em>Productos.</em></h2>
+
+
+      <p style="color:var(--muted);font-size:0.95rem;margin-top:12px;">Cada módulo termina con una entrega real que
+
+
+        queda en tu portafolio de GitHub.</p>
+
+
+    </div>
+
+
+
+
+
+    <!-- Swiper builds slider -->
+    <div class="builds-swiper-wrapper">
+
+      <div class="swiper builds-swiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="build-card">
+              <div class="build-img">
+                <img src="static/images/dashboeard.webp" alt="Dashboard Personal Interactivo" loading="lazy"
+                  decoding="async" />
+              </div>
+              <div class="build-body">
+                <div class="build-phase">FASE 01 — MÓDULO 1</div>
+                <h4>Dashboard Personal Interactivo</h4>
+                <p>Saludo personalizado, modo oscuro/claro, barra de metas y lógica condicional.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="build-card">
+              <div class="build-img">
+                <img src="static/images/bitburger.webp" alt="BitBurger POS" loading="lazy" decoding="async" />
+              </div>
+              <div class="build-body">
+                <div class="build-phase">FASE 01 — MÓDULO 2</div>
+                <h4>BitBurger POS</h4>
+                <p>Sistema de punto de venta con cálculo de impuestos, cupones y arquitectura de funciones puras.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="build-card">
+              <div class="build-img">
+                <img src="static/images/sistema de inventario.webp" alt="Sistema de Inventario" loading="lazy"
+                  decoding="async" />
+              </div>
+              <div class="build-body">
+                <div class="build-phase">FASE 01 — MÓDULO 3</div>
+                <h4>Sistema de Inventario</h4>
+                <p>Arrays de objetos, filtros, búsqueda en tiempo real y render dinámico completo.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="build-card">
+              <div class="build-img">
+                <img src="static/images/API rest.webp" alt="API REST Desplegada" loading="lazy" decoding="async" />
+              </div>
+              <div class="build-body">
+                <div class="build-phase">FASE 02</div>
+                <h4>API REST Desplegada</h4>
+                <p>Backend con CRUD completo, autenticación JWT y base de datos real en producción.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="build-card">
+              <div class="build-img">
+                <img src="static/images/app full stack.webp" alt="App Fullstack en Vercel" loading="lazy"
+                  decoding="async" />
+              </div>
+              <div class="build-body">
+                <div class="build-phase">FASE 03</div>
+                <h4>App Fullstack en Vercel</h4>
+                <p>React + Supabase + Tailwind. Usuarios reales, datos protegidos, live en internet.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="build-card build-card--graduation">
+              <div class="build-img">🏆</div>
+              <div class="build-body">
+                <div class="build-phase">PROYECTO GRADUACIÓN</div>
+                <h4>Tu Producto</h4>
+                <p>Una aplicación completa de tu elección. El proyecto que presentas a clientes y empleadores.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Navigation arrows -->
+      <button class="builds-btn builds-btn--prev" id="builds-prev" aria-label="Anterior">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+      </button>
+      <button class="builds-btn builds-btn--next" id="builds-next" aria-label="Siguiente">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6" />
+        </svg>
+      </button>
+
+      <!-- Pagination dots -->
+      <div class="builds-pagination" id="builds-pagination"></div>
+
+    </div>
+
+
+  </section>
+
+
+
+
+
+  <!-- ─── PARA TI / TUS PADRES ──────────────────────────── -->
+
+
+  <section id="para-ti">
+
+
+    <div class="dual-header reveal">
+
+
+      <p class="section-label">// ¿POR QUÉ LEVELUP CODE?</p>
+
+
+      <h2 class="section-title">Para los que<br>estudian <em>y</em> para<br>los que <em>impulsan.</em></h2>
+
+
+    </div>
+
+
+
+
+
+    <div class="dual-grid">
+
+
+      <div class="audience-card for-kids reveal">
+
+
+        <span class="audience-tag">PARA LOS ESTUDIANTES</span>
+
+
+        <h3>¿Por qué vas a querer entrar?</h3>
+
+
+        <ul>
+
+
+          <li><span class="check">▶</span> Construyes proyectos que puedes mostrar, no ejercicios que nadie ve.</li>
+
+
+          <li><span class="check">▶</span> El universo Bit Wars: misiones, rangos y logros — aprender se siente como
+
+
+            jugar.</li>
+
+
+          <li><span class="check">▶</span> Al terminar sabes hacer cosas que el 95% de la gente de tu edad no puede.
+
+
+          </li>
+
+
+          <li><span class="check">▶</span> Portfolio en GitHub que habla por ti desde el primer mes.</li>
+
+
+          <li><span class="check">▶</span> El stack que usan las startups reales — no lo que te enseñan en el colegio.
+
+
+          </li>
+
+
+          <li><span class="check">▶</span> Aprendes a usar IA como herramienta, no como muleta — mientras otros copian y
+            pegan sin entender, tú diriges y orquestas el código.</li>
+
+
+        </ul>
+
+
+      </div>
+
+
+
+
+
+      <div class="audience-card for-parents reveal">
+
+
+        <span class="audience-tag">PARA LOS PADRES</span>
+
+
+        <h3>¿Por qué vale la inversión?</h3>
+
+
+        <ul>
+
+
+          <li><span class="check">◈</span> Metodología estructurada con progresión clara — no tutoriales sueltos de
+
+
+            YouTube.</li>
+
+
+          <li><span class="check">◈</span> Las tecnologías del mercado real: JavaScript, React, Node.js, SQL. Empleables
+
+
+            desde hoy.</li>
+
+
+          <li><span class="check">◈</span> Proyectos verificables — pueden ver exactamente lo que su hijo construye cada
+
+
+            mes.</li>
+
+
+          <li><span class="check">◈</span> Habilidad de alto valor: los developers son de los profesionales mejor
+
+
+            pagados globalmente.</li>
+
+
+          <li><span class="check">◈</span> Una comunidad supervisada, con formación en buenas prácticas y mentalidad
+
+
+            profesional.</li>
+
+
+          <li><span class="check">◈</span> No compite con la IA, la domina: aprende a usarla con criterio técnico para
+            acelerar su trabajo porque entiende cómo funciona la web por debajo.</li>
+
+
+        </ul>
+
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
+
+
+
+  <!-- ─── TECH STACK ─────────────────────────────────────── -->
+
+
+  <section id="stack">
+
+
+    <div class="stack-header reveal">
+
+
+      <p class="section-label">// STACK TECNOLÓGICO</p>
+
+
+      <h2 class="section-title">El toolkit del <em>graduado</em></h2>
+
+
+      <p>Las mismas tecnologías que usan las startups que usas todos los días.</p>
+
+
+    </div>
+
+
+    <div class="tech-grid reveal">
+
+
+      <div class="tech-chip">
+
+
+        <img class="tech-icon" src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript"> JavaScript
+
+
+      </div>
+
+
+      <div class="tech-chip">
+
+
+        <img class="tech-icon" src="https://cdn.simpleicons.org/react/61DAFB" alt="React"> React
+
+
+      </div>
+
+
+      <div class="tech-chip">
+
+
+        <img class="tech-icon" src="https://cdn.simpleicons.org/nodedotjs/6DA55F" alt="Node.js"> Node.js
+
+
+      </div>
+
+
+      <div class="tech-chip">
+
+
+        <img class="tech-icon" src="https://cdn.simpleicons.org/express/ffffff" alt="Express.js"> Express.js
+
+
+      </div>
+
+
+      <div class="tech-chip">
+
+
+        <img class="tech-icon" src="https://cdn.simpleicons.org/postgresql/4169E1" alt="SQL"> SQL
+
+
+      </div>
+
+
+      <div class="tech-chip">
+
+
+        <img class="tech-icon" src="https://cdn.simpleicons.org/supabase/3ECF8E" alt="Supabase"> Supabase
+
+
+      </div>
+
+
+      <div class="tech-chip">
+
+
+        <img class="tech-icon" src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind CSS"> Tailwind CSS
+
+
+      </div>
+
+
+      <div class="tech-chip">
+
+
+        <svg class="tech-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+
+          <rect x="3" y="3" width="7" height="7" rx="1.5" fill="#a0a0a0" />
+
+
+          <rect x="14" y="3" width="7" height="7" rx="1.5" fill="#a0a0a0" />
+
+
+          <rect x="3" y="14" width="7" height="7" rx="1.5" fill="#a0a0a0" />
+
+
+          <rect x="14" y="14" width="7" height="7" rx="1.5" fill="#a0a0a0" />
+
+
+        </svg> Shadcn/ui
+
+
+      </div>
+
+
+      <div class="tech-chip">
+
+
+        <img class="tech-icon" src="https://cdn.simpleicons.org/reactquery/FF4154" alt="TanStack Query"> TanStack Query
+
+
+      </div>
+
+
+      <div class="tech-chip">
+
+
+        <img class="tech-icon" src="https://cdn.simpleicons.org/vercel/ffffff" alt="Vercel"> Vercel
+
+
+      </div>
+
+
+
+
+
+      <div class="tech-chip">
+
+
+        <img class="tech-icon" src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub"> GitHub
+
+
+      </div>
+
+
+      <div class="tech-chip">
+
+
+        <img class="tech-icon" src="https://cdn.simpleicons.org/vite/646CFF" alt="Vite"> Vite
+
+
+      </div>
+
+
+      <div class="tech-chip">
+
+
+        <img class="tech-icon" src="https://cdn.simpleicons.org/jsonwebtokens/ffffff" alt="JWT Auth"> JWT Auth
+
+
+      </div>
+
+
+      <div class="tech-chip">
+
+
+        <img class="tech-icon" src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"> HTML + CSS
+
+
+      </div>
+
+
+      <div class="tech-chip">
+
+
+        <img class="tech-icon" src="https://cdn.simpleicons.org/bootstrap/7952B3" alt="Bootstrap"> Bootstrap
+
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
+
+
+
+  <!-- ─── FAQ PADRES ─────────────────────────────────────── -->
+
+
+  <section id="padres">
+
+
+    <div class="faq-container">
+
+
+      <div class="faq-header reveal">
+
+
+        <p class="section-label">// PREGUNTAS FRECUENTES</p>
+
+
+        <h2 class="section-title">Todo lo que los<br>padres <em>preguntan.</em></h2>
+
+
+      </div>
+
+
+
+
+
+      <div class="faq-item reveal">
+
+
+        <div class="faq-q">¿Qué edad mínima se requiere para ingresar? <span class="icon">+</span></div>
+
+
+        <div class="faq-a">El bootcamp está diseñado para jóvenes desde los 13 años. No se requiere ningún conocimiento
+
+
+          previo de programación — empezamos desde absoluto cero y construimos de forma progresiva.</div>
+
+
+      </div>
+
+
+      <div class="faq-item reveal">
+
+
+        <div class="faq-q">¿Es un compromiso muy exigente de tiempo? <span class="icon">+</span></div>
+
+
+        <div class="faq-a">El programa está pensado para que sea compatible con el estudio regular. Las sesiones tienen
+
+
+          una estructura clara y los proyectos se desarrollan de forma incremental para no generar estrés acumulado.
+
+
+        </div>
+
+
+      </div>
+
+
+      <div class="faq-item reveal">
+
+
+        <div class="faq-q">¿Qué diferencia esto de aprender con tutoriales de YouTube? <span class="icon">+</span></div>
+
+
+        <div class="faq-a">Los tutoriales enseñan fragmentos sueltos. LevelUp Code tiene un currículo estructurado de 12
+
+
+          meses donde cada lección construye sobre la anterior. El estudiante termina con un sistema completo y
+
+
+          verificable, no con conocimientos dispersos.</div>
+
+
+      </div>
+
+
+      <div class="faq-item reveal">
+
+
+        <div class="faq-q">¿Para qué le sirve esto a futuro? <span class="icon">+</span></div>
+
+
+        <div class="faq-a">Los desarrolladores de software son hoy uno de los perfiles profesionales más demandados y
+
+
+          mejor remunerados del mundo. Independientemente de la carrera que elija tu hijo, saber programar es una
+
+
+          ventaja diferencial en cualquier campo: diseño, negocios, ciencias, emprendimiento.</div>
+
+
+      </div>
+
+
+      <div class="faq-item reveal">
+
+
+        <div class="faq-q">¿Cómo sé que mi hijo está progresando? <span class="icon">+</span></div>
+
+
+        <div class="faq-a">Cada módulo termina con un proyecto concreto publicado en GitHub — código real que puedes
+
+
+          ver, revisar y mostrar. No hay evaluaciones abstractas: el progreso se mide en cosas construidas.</div>
+
+
+      </div>
+
+
+      <div class="faq-item reveal">
+
+
+        <div class="faq-q">¿Vale la pena aprender a programar con tanta IA? <span class="icon">+</span></div>
+
+
+        <div class="faq-a">Sí, hoy más que nunca. La IA es increíble, pero comete errores y necesita dirección. Quien
+          solo "copia y pega" de ChatGPT no puede crear software complejo. En LevelUp Code enseñamos las bases: usarán
+          herramientas de IA para ser más rápidos, pero con el criterio técnico necesario para armar, dirigir y corregir
+          arquitecturas reales.</div>
+
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
+
+
+
+  <!-- ─── CTA FINAL ──────────────────────────────────────── -->
+
+
+  <section id="cta-final">
+
+
+    <p class="cta-eyebrow reveal">// ¿LISTO PARA INICIAR LA MISIÓN?</p>
+
+
+    <h2 class="cta-title reveal">Tu primera línea de código<br>te espera, <span>Padawan.</span></h2>
+
+
+    <p class="cta-sub reveal">Escríbenos por WhatsApp y te contamos todo: cómo funciona el programa, cuándo arranca la
+
+
+      próxima generación y qué necesitas para unirte.</p>
+
+
+
+
+
+    <div class="reveal">
+
+
+      <a href="https://wa.me/573132160397?text=Hola%2C%20quiero%20saber%20más%20sobre%20el%20bootcamp%20LevelUp%20Code"
+        class="btn-whatsapp" target="_blank">
+
+
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+
+
+        </svg>
+
+
+        Quiero unirme al bootcamp
+
+
+      </a>
+
+
+      <p class="cta-note">Sin compromiso · Sin precios ocultos · Respuesta en menos de 24 hrs</p>
+
+
+    </div>
+
+
+  </section>
+
+
+
+
+
+  <!-- ─── FOOTER ─────────────────────────────────────────── -->
+
+
+  <footer>
+
+
+    <div class="footer-brand">
+
+
+      <span>LevelUp Code</span> — Bit Wars Universe · Todos los derechos reservados
+
+
+    </div>
+
+
+
+
+
+    <div class="footer-social">
+
+
+      <a href="https://www.instagram.com/levelupcod3?igsh=cjFhaXRyanJidWZr" target="_blank" class="footer-link"
+        aria-label="Instagram de LevelUp Code">
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+
+
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+
+
+          <circle cx="12" cy="12" r="4.5" />
+
+
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+
+
+        </svg>
+
+
+        <span>@levelupcod3</span>
+
+
+      </a>
+
+
+      <a href="mailto:levelupcod3@gmail.com" class="footer-link" aria-label="Correo de contacto">
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+
+
+          <rect x="2" y="4" width="20" height="16" rx="3" />
+
+
+          <polyline points="2,4 12,13 22,4" />
+
+
+        </svg>
+
+
+        <span>levelupcod3@gmail.com</span>
+
+
+      </a>
+
+
+    </div>
+
+
+
+  </footer>
+
+
+
+
+
+  <!-- ─── JS ─────────────────────────────────────────────── -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="static/js/script.js" defer></script>
+
+  <script>
+    // ─── Builds Swiper ───────────────────────────────────
+    window.addEventListener('load', function () {
+      new Swiper('.builds-swiper', {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+        centeredSlides: false,
+        grabCursor: true,
+        navigation: {
+          nextEl: '#builds-next',
+          prevEl: '#builds-prev',
+        },
+        pagination: {
+          el: '#builds-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1.8,
+            spaceBetween: 24,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 28,
+          },
+        },
+      });
+    });
+  </script>
+
+
+</body>
+
+
+
+
+
+</html>
